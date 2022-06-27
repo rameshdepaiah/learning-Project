@@ -1,0 +1,7 @@
+<template>
+    <template if:true={account}>
+    <lightning-icon  icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon> 
+                         <p>{account.Name}</p> 
+                        <lightning-button variant="brand" label="Edit Account"  onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                    </template>

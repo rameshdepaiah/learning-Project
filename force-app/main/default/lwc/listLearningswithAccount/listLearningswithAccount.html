@@ -1,0 +1,18 @@
+<template>
+    <template if:true={hasrecords}>
+        <template for:each={learningrecords} for:item="record">
+            <lightning-card key= {record.Name}   title= {record.Name}>
+                <template if:true={record.Accounts__r}>
+                    <template for:each={record.Accounts__r} for:item="account">  
+                      <div key={account.Name}>
+                        
+                    <c-edit-account  account={account} onselected={handleClick} ></c-edit-account>
+                    </div>
+                    </template>
+                </template>
+            
+            </lightning-card>
+        </template>
+    </template>
+    
+</template>
