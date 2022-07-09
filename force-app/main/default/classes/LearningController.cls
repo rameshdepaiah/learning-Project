@@ -12,6 +12,16 @@ public with sharing class LearningController  {
         return lstLearnings;
     }
 
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getContactList() {
+        return [
+            SELECT Id, Name, Title, Phone, Email,FirstName,LastName
+            FROM Contact
+            
+            LIMIT 10
+        ];
+    }
+
     
 
 
