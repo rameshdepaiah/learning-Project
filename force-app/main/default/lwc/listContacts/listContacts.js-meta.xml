@@ -16,6 +16,7 @@
             <propertyType extends="SObject" name="T" label="Select SObject"/>
             <!-- <property name="records" type="{T[]}" label="Records" /> -->
             <property name="outputContactSelected" label="Selected Contact" type="{T}"  role="outputOnly"/>
+            <property name="accountId" label="Input Accountid" type="string"  role="inputOnly"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

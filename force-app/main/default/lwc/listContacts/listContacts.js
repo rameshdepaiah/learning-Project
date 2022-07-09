@@ -4,6 +4,7 @@ import { FlowAttributeChangeEvent } from 'lightning/flowSupport';
 
 export default class ListContacts extends LightningElement {
     @api outputContactSelected;
+    @api accountId;
     contactlist;
 
     columns = [
